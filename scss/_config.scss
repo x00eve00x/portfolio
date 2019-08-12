@@ -1,0 +1,30 @@
+$primary-color: #FF96AB;
+$secondary-color: #FFF0A4;
+$bg-opacity: 0.8;
+$home-img-visible: true;
+$home-img: url(../img/painting-background.JPG);
+
+@mixin fading {
+    transition: all 0.6s ease-out;
+}
+
+@mixin background {
+    @if $home-img-visible {
+        &#bg-img {
+            background: $home-img;
+            background-attachment: fixed;
+            background-size: cover;
+            
+            // we could also use &:after
+            .overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: rgba($primary-color, $bg-opacity);
+            }
+        }
+    }
+}

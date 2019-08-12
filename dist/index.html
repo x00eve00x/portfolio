@@ -5,10 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/fbfc7daf96.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="script.js"></script>
   </head>
-  <body>
-      <h1>Hi babe</h1>
+  <body id="bg-img">
+      <div class="overlay"></div>
+      <header>
+          <div class="hamburger-btn">
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+          </div>
+          <nav class="menu">
+              <div class="menu--left-side">
+                  <div class="picture"></div>
+              </div>
+              <ul class="menu-nav">
+                  <li class="nav-item">
+                      <a href="/" class="nav-link">
+                          Home
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/about.html" class="nav-link">
+                          About Me
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/projects.html" class="nav-link">
+                          My Work
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/contact.html" class="nav-link">
+                          Contact Me
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+      <main id="home">
+          <h1 class="heading-lg">
+              Eve <span class="text-secondary">Major</span>
+          </h1>
+          <h2 class="heading-sm">
+              Web Developer, Artist...and Stripper 
+          </h2>
+          <div class="icons">
+              <!--Maybe put "empty links" for FB and Twitter ?  -->
+              <a href="#!">
+                  <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a href="#!">
+                  <i class="fab fa-github fa-2x"></i>
+              </a>
+          </div>
+      </main>
+      <script src="js/main.js"></script>
   </body>
 </html>
