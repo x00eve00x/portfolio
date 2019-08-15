@@ -9,10 +9,30 @@
     @include fading;
     
     .btn-line {
-        width: 28px;
+        width: 32px;
         height: 3px;
-        margin: 0 0 5px 0;
-        background: white;
+        margin: 0 0 7px 0;
+        background: $text-color;
         @include fading;
+    }
+    
+    // Change into X
+    &.close {
+        transform: rotate(180deg);
+        
+        .btn-line {
+            // Line 1 - Rotate
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(7px, 7px);
+            }
+            // Line 2 - Hide
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            // Line 3 - Rotate
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+        }
     }
 }
