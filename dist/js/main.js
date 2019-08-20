@@ -1,7 +1,7 @@
 // Select DOM Items
 const hamburgerBtn = document.querySelector('.hamburger-btn');
 const menu = document.querySelector('.menu');
-const menuLeftSide = document.querySelector('.menu--left-side');
+const menuLeftSide = document.querySelector('.menu-sideleft');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.nav-item');
 
