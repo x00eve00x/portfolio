@@ -87,14 +87,11 @@
         }
         
         .picture {
-            width: 335px;
-            height: 335px;
+            width: 250px;
+            height: 250px;
+            background: url('../img/menu-picture.jpg');
             border-radius: 50%;
             border: solid 3px $secondary-color;
-            background: url("../img/menu-picture.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 328px auto;
         }
         
     }
