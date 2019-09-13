@@ -1,6 +1,7 @@
 $primary-color: #F97690;
-$secondary-color: #AA2641;
+$secondary-color: #F9F66F;//#A31F3A;
 $text-color: #FFE1E7;
+$text-color-darker: #992E44;
 $icons-color: #8EBDE9;
 $bg-opacity: 0.8;
 $home-img-visible: true;
@@ -29,6 +30,15 @@ $home-img: url(../img/painting-background.JPG);
       }
     }
   }
+}
+
+// Set text color
+@function text-color-setting($color) {
+  @if (lightness($color) > 45) {
+    @return #992E44;
+  } @else {
+  @return $text-color;
+}
 }
 // Media queries (for responsiveness)
 @mixin smMedia {

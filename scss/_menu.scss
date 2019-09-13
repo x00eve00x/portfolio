@@ -12,7 +12,7 @@
         width: 32px;
         height: 3px;
         margin: 0 0 7px 0;
-        background: $text-color;
+        background: text-color-setting($primary-color);
         @include fading;
     }
     
@@ -43,7 +43,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.88;
     visibility: hidden;
     
     &.show {
@@ -117,6 +117,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
+        color: text-color-setting($primary-color);
         @include fading;
         
         &:hover {
