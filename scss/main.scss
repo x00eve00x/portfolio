@@ -2,6 +2,8 @@
 @import 'menu';
 @import 'mobile';
 
+// MAIN STYLING
+
 * {
     box-sizing: border-box;
 }
@@ -16,52 +18,15 @@ body {
     line-height: 1.5;
 }
 
-// Headings
-h1, h2, h3 {
-    margin: 0;
-    font-weight: 400;
-
-    &.heading-lg {
-        font-size: 6rem;
-    }
-
-    &.heading-sm {
-        margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2), 0.5);
-    }
-}
-
-a {
-    color: $text-color;
-    text-decoration: none;
-
-    i {
-        color: $icons-color;
-        text-shadow: 2px 2px 3px $text-color-darker;
-    }
-}
-
 header {
     position: fixed;
     width: 100%;
     z-index: 2;
 }
 
-.text-secondary {
-    color: $secondary-color;
-    text-shadow: 2px 2px $text-color-darker;
-}
-
-.emojis {
-    font-size: 21px;
-}
-
-// Home page
-
 main {
     padding: 4rem;
-    height: 100%;
+    min-height: calc(100vh - 55px);
 
     .icons {
         margin-top: 1rem;
@@ -83,6 +48,56 @@ main {
         }
     }
 }
+
+a {
+    color: $text-color;
+    text-decoration: none;
+
+    i {
+        color: $icons-color;
+        text-shadow: 2px 2px 3px $text-color-darker;
+    }
+}
+
+.inline-link {
+    font-size: 20px;
+    padding: 0.3rem;
+    background-color: $boxes-color;
+
+    &:hover {
+        background-color: $icons-color;
+        color: $text-color-darker;
+        @include fading();
+    }
+}
+
+.text-secondary {
+    color: $secondary-color;
+    text-shadow: 2px 2px $text-color-darker;
+    margin-bottom: 1rem;
+}
+
+.emojis {
+    font-size: 21px;
+}
+
+    // Headings
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 400;
+
+
+    &.heading-lg {
+        font-size: 6rem;
+    }
+
+    &.heading-sm {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 2), 0.5);
+    }
+}
+
 
 // ABOUT PAGE :
     // CSS Grid
@@ -114,12 +129,11 @@ main {
 
 .bio-box {
     background: lighten($primary-color, 4);
-    padding: 0.5rem;
+    padding: 0.6rem;
     border-bottom: $secondary-color 5px solid;
 }
 
     // Tooltips
-
 .tooltip {
     font-size: 20px;
     position: relative;
@@ -220,5 +234,14 @@ main {
             }
         }
     }
+}
+    // footer
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 8);
+    color: text-color-setting($primary-color);
+    height: 55px;
 }
 

@@ -1,6 +1,6 @@
 $primary-color: #F97690;
 $secondary-color: #F9F66F;//#A31F3A;
-$boxes-color: rgba(182, 15, 46, 0.78);
+$boxes-color: rgba(182, 15, 46, 0.70);
 $text-color: #FFE1E7;
 $text-color-darker: #992E44;
 $icons-color: #8EBDE9;
@@ -37,7 +37,7 @@ $home-img: url(../img/painting-background.JPG);
 // Set text color
 @function text-color-setting($color) {
   @if (lightness($color) > 45) {
-    @return #992E44;
+    @return $text-color-darker;
   } @else {
   @return $text-color;
 }
