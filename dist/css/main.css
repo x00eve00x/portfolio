@@ -195,7 +195,10 @@ h1, h2, h3 {
   h1.heading-sm, h2.heading-sm, h3.heading-sm {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(249, 128, 152, 0.5); }
+    background: rgba(250, 138, 160, 0.5); }
+  h1.heading-alt, h2.heading-alt, h3.heading-alt {
+    padding: 0.1rem  0.7rem;
+    background: rgba(151, 194, 235, 0.55); }
 
 .about-me {
   display: grid;

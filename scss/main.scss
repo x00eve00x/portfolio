@@ -54,7 +54,7 @@ a {
     text-decoration: none;
 
     i {
-        color: $icons-color;
+        color: $popping-color;
         text-shadow: 2px 2px 3px $text-color-darker;
     }
 }
@@ -65,7 +65,7 @@ a {
     background-color: $boxes-color;
 
     &:hover {
-        background-color: $icons-color;
+        background-color: $popping-color;
         color: $text-color-darker;
         @include fading();
     }
@@ -94,7 +94,12 @@ h1, h2, h3 {
     &.heading-sm {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2), 0.5);
+        background: rgba(lighten($primary-color, 4), 0.5);
+    }
+
+    &.heading-alt {
+        padding: 0.1rem  0.7rem;
+        background: rgba(lighten($popping-color, 2), 0.55);
     }
 }
 
