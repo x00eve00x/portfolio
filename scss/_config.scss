@@ -6,7 +6,7 @@ $text-color-darker: #992E44;
 $popping-color: #8EBDE9;
 $bg-opacity: 0.8;
 $home-img-visible: true;
-$home-img: url(../img/painting-background.JPG);
+$home-img: url(../assets/img/painting-background.JPG);
 
 @mixin fading {
   transition: all 0.7s ease-out;

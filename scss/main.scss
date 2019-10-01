@@ -99,7 +99,7 @@ h1, h2, h3 {
 
     &.heading-alt {
         padding: 0.1rem  0.7rem;
-        background: rgba(lighten($popping-color, 2), 0.55);
+        background: rgba(lighten($popping-color, 2), 0.6);
     }
 }
 
@@ -134,9 +134,36 @@ h1, h2, h3 {
 }
 
 .bio-box {
-    background: lighten($primary-color, 4);
+    background: lighten($primary-color, 6);
     padding: 0.6rem;
     border-bottom: $secondary-color 5px solid;
+}
+
+.technologies {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0.5em 0;
+    padding-left: 0;
+    flex-direction: row;
+    list-style-type: none;
+
+    li {
+        align-items: center;
+        margin: 0;
+        padding: 2px 8px;
+
+        img {
+            margin: auto 3px;
+            height: 2.6em;
+        }
+    }
 }
 
     // Tooltips
