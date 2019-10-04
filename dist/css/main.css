@@ -209,6 +209,10 @@ h1, h2, h3 {
 .bio {
   grid-area: bio;
   font-size: 1.2rem; }
+  .bio p {
+    border-left: #F9F66F 6px solid;
+    padding: 2rem;
+    background-image: linear-gradient(to right, #fa98ac, #F97690); }
 
 .experience {
   grid-area: job; }
@@ -222,7 +226,7 @@ h1, h2, h3 {
 .bio-box {
   background: #fa93a8;
   padding: 0.6rem;
-  border-bottom: #F9F66F 5px solid; }
+  border-bottom: #F9F66F 6px solid; }
 
 .technologies {
   display: -webkit-flex;
@@ -291,7 +295,9 @@ h1, h2, h3 {
     display: block;
     height: 340px;
     width: auto;
-    margin: auto;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 50%;
     border: #F9F66F 4px solid;
     transition: all 0.7s ease-out; }

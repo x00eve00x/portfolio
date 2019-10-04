@@ -118,6 +118,14 @@ h1, h2, h3 {
 .bio {
     grid-area: bio;
     font-size: 1.2rem;
+
+    p {
+        border-left: $secondary-color 6px solid;
+        padding: 2rem;
+        //background-image: linear-gradient(to right, lighten($primary-color, 6), rgba(lighten($popping-color, 2), 0.6));
+        background-image: linear-gradient(to right, lighten($primary-color, 7), $primary-color);
+
+    }
 }
 
 .experience {
@@ -136,7 +144,7 @@ h1, h2, h3 {
 .bio-box {
     background: lighten($primary-color, 6);
     padding: 0.6rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: $secondary-color 6px solid;
 }
 
 .technologies {
@@ -224,7 +232,9 @@ h1, h2, h3 {
         display: block;
         height: 340px;
         width: auto;
-        margin: auto;
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 50%;
         border: $secondary-color 4px solid;
         @include fading;
