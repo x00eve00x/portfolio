@@ -223,10 +223,18 @@ h1, h2, h3 {
 .personal {
   grid-area: perso; }
 
+.experience b, .personal b, .bio b {
+  background-color: #F97690; }
+
 .bio-box {
   background: #fa93a8;
   padding: 0.6rem;
   border-bottom: #F9F66F 6px solid; }
+  .bio-box p {
+    font-size: 18px; }
+  .bio-box .smaller-text {
+    font-size: 16px;
+    font-style: italic; }
 
 .technologies {
   display: -webkit-flex;

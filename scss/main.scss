@@ -124,7 +124,6 @@ h1, h2, h3 {
         padding: 2rem;
         //background-image: linear-gradient(to right, lighten($primary-color, 6), rgba(lighten($popping-color, 2), 0.6));
         background-image: linear-gradient(to right, lighten($primary-color, 7), $primary-color);
-
     }
 }
 
@@ -141,10 +140,25 @@ h1, h2, h3 {
     grid-area: perso;
 }
 
+.experience, .personal, .bio {
+    b {
+        background-color: $primary-color;
+    }
+}
+
 .bio-box {
     background: lighten($primary-color, 6);
     padding: 0.6rem;
     border-bottom: $secondary-color 6px solid;
+
+    p {
+        font-size: 18px;
+    }
+
+    .smaller-text {
+        font-size: 16px;
+        font-style: italic;
+    }
 }
 
 .technologies {
