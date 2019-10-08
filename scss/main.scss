@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 // MAIN STYLING
 
@@ -71,12 +70,6 @@ a {
     }
 }
 
-.text-secondary {
-    color: $secondary-color;
-    text-shadow: 2px 2px $text-color-darker;
-    margin-bottom: 1rem;
-}
-
 .emojis {
     font-size: 21px;
 }
@@ -85,7 +78,6 @@ a {
 h1, h2, h3 {
     margin: 0;
     font-weight: 400;
-
 
     &.heading-lg {
         font-size: 6rem;
@@ -101,6 +93,20 @@ h1, h2, h3 {
         padding: 0.1rem  0.7rem;
         background: rgba(lighten($popping-color, 2), 0.6);
     }
+}
+
+.hand-writing, .text-secondary {
+    color: $secondary-color;
+    text-shadow: 2px 2px $text-color-darker;
+    margin-bottom: 1rem;
+}
+
+.hand-writing {
+    font-family: "Charmonman", cursive;
+}
+
+.text-secondary {
+    font-family: "Roboto Mono", monospace;
 }
 
 
@@ -302,3 +308,4 @@ h1, h2, h3 {
     height: 55px;
 }
 
+@import 'mobile';

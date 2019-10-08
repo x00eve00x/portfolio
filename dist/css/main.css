@@ -89,37 +89,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .heading-lg {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-sideleft {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-sideleft.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    font-size: 23px;
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0); }
-  .menu-sideleft {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-sideleft .picture {
-      background: url("../assets/img/menu-picture_sm.jpg");
-      width: 120px;
-      height: 120px; } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
-
 * {
   box-sizing: border-box; }
 
@@ -179,11 +148,6 @@ a {
     color: #992E44;
     transition: all 0.7s ease-out; }
 
-.text-secondary {
-  color: #F9F66F;
-  text-shadow: 2px 2px #992E44;
-  margin-bottom: 1rem; }
-
 .emojis {
   font-size: 21px; }
 
@@ -199,6 +163,17 @@ h1, h2, h3 {
   h1.heading-alt, h2.heading-alt, h3.heading-alt {
     padding: 0.1rem  0.7rem;
     background: rgba(151, 194, 235, 0.6); }
+
+.hand-writing, .text-secondary {
+  color: #F9F66F;
+  text-shadow: 2px 2px #992E44;
+  margin-bottom: 1rem; }
+
+.hand-writing {
+  font-family: "Charmonman", cursive; }
+
+.text-secondary {
+  font-family: "Roboto Mono", monospace; }
 
 .about-me {
   display: grid;
@@ -342,3 +317,37 @@ h1, h2, h3 {
   background: #f74f70;
   color: #992E44;
   height: 55px; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .heading-lg {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-sideleft {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-sideleft.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    font-size: 23px;
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0); }
+  .menu-sideleft {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-sideleft .picture {
+      background: url("../assets/img/menu-picture_sm.jpg");
+      width: 120px;
+      height: 120px; }
+  .about-me {
+    grid-template-areas: 'bioimg' 'bio' 'job' 'skills' 'perso';
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }

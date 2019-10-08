@@ -47,6 +47,16 @@
       height: 120px;
     }
   }
+
+  .about-me {
+    grid-template-areas:
+    'bioimg'
+    'bio'
+    'job'
+    'skills'
+    'perso';
+    grid-template-columns: 1fr;
+  }
 }
 
 // Small devices (portrait tablets & phones)
