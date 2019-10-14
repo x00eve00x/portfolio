@@ -311,6 +311,23 @@ h1, h2, h3 {
     .bio-img:hover .overlay .text {
       visibility: visible; }
 
+.contact-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .contact-boxes div {
+    font-size: 2rem;
+    border: 3px #F9F66F solid;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    transition: all 0.7s ease-out; }
+    .contact-boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: rgba(182, 15, 46, 0.7);
+      color: #FFE1E7; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
