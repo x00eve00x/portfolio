@@ -221,14 +221,18 @@ h1, h2, h3 {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0.5em 0;
+  margin: 0.7em 0;
   padding-left: 0;
   flex-direction: row;
   list-style-type: none; }
   .technologies li {
     align-items: center;
     margin: 0;
-    padding: 2px 8px; }
+    padding: 2px 8px;
+    opacity: 0.8; }
+    .technologies li:hover {
+      opacity: 1;
+      transform: scale(1.2); }
     .technologies li img {
       margin: auto 3px;
       height: 2.6em; }
