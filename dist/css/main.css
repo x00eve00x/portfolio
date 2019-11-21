@@ -122,9 +122,9 @@ main {
   min-height: calc(100vh - 55px); }
   main .icons {
     margin-top: 1rem; }
-    main .icons a {
+    main .icons a i {
       padding: 0.4rem; }
-      main .icons a:hover {
+      main .icons a i:hover {
         color: #F9F66F;
         transition: all 0.7s ease-out; }
   main#home {
@@ -229,7 +229,8 @@ h1, h2, h3 {
     align-items: center;
     margin: 0;
     padding: 2px 8px;
-    opacity: 0.8; }
+    opacity: 0.8;
+    transition: all .1s linear; }
     .technologies li:hover {
       opacity: 1;
       transform: scale(1.2); }
@@ -237,12 +238,12 @@ h1, h2, h3 {
       margin: auto 3px;
       height: 2.6em; }
 
-.tooltip {
+.tooltip-info {
   font-size: 20px;
   position: relative;
   border-bottom: 1.5px dotted #F9F66F;
   cursor: help; }
-  .tooltip:before {
+  .tooltip-info:before {
     position: absolute;
     z-index: 2;
     display: none;
@@ -258,7 +259,7 @@ h1, h2, h3 {
     bottom: calc(100% + 5px);
     left: 50%;
     transform: translateX(-50%); }
-  .tooltip:after {
+  .tooltip-info:after {
     position: absolute;
     z-index: 1;
     display: none;
@@ -271,7 +272,7 @@ h1, h2, h3 {
     border-top-color: rgba(182, 15, 46, 0.7);
     border-bottom-width: 0;
     transform: translateX(-50%); }
-  .tooltip:hover:before, .tooltip:hover:after {
+  .tooltip-info:hover:before, .tooltip-info:hover:after {
     display: inline-block; }
 
 .bio-img {

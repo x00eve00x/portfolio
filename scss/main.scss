@@ -30,7 +30,7 @@ main {
     .icons {
         margin-top: 1rem;
 
-        a {
+        a i {
             padding: 0.4rem;
 
             &:hover {
@@ -202,7 +202,7 @@ h1, h2, h3 {
 }
 
     // Tooltips
-.tooltip {
+.tooltip-info {
     font-size: 20px;
     position: relative;
     border-bottom: 1.5px dotted $secondary-color;
@@ -239,7 +239,6 @@ h1, h2, h3 {
         border-top-color: $boxes-color;
         border-bottom-width: 0;
         transform: translateX(-50%);
-
     }
 
     &:hover:before,
@@ -247,6 +246,8 @@ h1, h2, h3 {
         display: inline-block;
     }
 }
+
+
 
     // Bio image
 .bio-img {
