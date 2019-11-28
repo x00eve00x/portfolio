@@ -226,17 +226,31 @@ h1, h2, h3 {
   flex-direction: row;
   list-style-type: none; }
   .technologies li {
+    position: relative;
     align-items: center;
-    margin: 0;
     padding: 2px 8px;
     opacity: 0.8;
     transition: all .1s linear; }
     .technologies li:hover {
       opacity: 1;
-      transform: scale(1.2); }
+      transform: scale(1.1); }
+      .technologies li:hover span {
+        opacity: 1; }
     .technologies li img {
-      margin: auto 3px;
-      height: 2.6em; }
+      margin-bottom: 0.5em;
+      margin-right: 1em;
+      text-align: center;
+      height: 2.6em;
+      display: block; }
+    .technologies li span {
+      background: rgba(182, 15, 46, 0.7);
+      color: #FFE1E7;
+      text-align: center;
+      border-radius: 8px;
+      padding: 6px;
+      font-size: 0.75em;
+      opacity: 0;
+      transition: 0.6s opacity; }
 
 .tooltip-info {
   font-size: 20px;
