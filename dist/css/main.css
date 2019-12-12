@@ -250,7 +250,8 @@ h1, h2, h3 {
       padding: 6px;
       font-size: 0.75em;
       opacity: 0;
-      transition: 0.6s opacity; }
+      transition: 0.6s opacity;
+      position: fixed; }
 
 .tooltip-info {
   font-size: 20px;
@@ -260,7 +261,7 @@ h1, h2, h3 {
   .tooltip-info:before {
     position: absolute;
     z-index: 2;
-    display: none;
+    opacity: 0;
     width: 200px;
     max-width: 200px;
     padding: 10px;
@@ -276,7 +277,7 @@ h1, h2, h3 {
   .tooltip-info:after {
     position: absolute;
     z-index: 1;
-    display: none;
+    opacity: 0;
     width: 0;
     height: 0;
     border: 5px solid transparent;
@@ -287,7 +288,8 @@ h1, h2, h3 {
     border-bottom-width: 0;
     transform: translateX(-50%); }
   .tooltip-info:hover:before, .tooltip-info:hover:after {
-    display: inline-block; }
+    opacity: 1;
+    transition: all 0.7s ease-out; }
 
 .bio-img {
   grid-area: bioimg;
@@ -329,6 +331,34 @@ h1, h2, h3 {
     width: 100%; }
     .bio-img:hover .overlay .text {
       visibility: visible; }
+
+.projects {
+  display: grid;
+  grid-gap: 0.6rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects .preview {
+    text-align: center;
+    position: relative; }
+    .projects .preview img {
+      width: 100%;
+      border: #F9F66F 4px solid; }
+    .projects .preview span {
+      background-color: rgba(182, 15, 46, 0.7);
+      color: #FFE1E7;
+      font-size: 1.4rem;
+      position: absolute;
+      padding: 0.5rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0; }
+    .projects .preview:hover img {
+      opacity: 0.5;
+      border-color: #8EBDE9;
+      transition: all 0.7s ease-out; }
+    .projects .preview:hover span {
+      opacity: 1;
+      transition: all 0.7s ease-out; }
 
 .contact-boxes {
   display: flex;
