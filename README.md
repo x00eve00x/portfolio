@@ -1,6 +1,3 @@
----
-permalink: /dist/index.html
----
-# portfolio
-New Responsive portfolio
-test
+
+# Portfolio (made with HTML & SASS)
+https://x00eve00x.github.io/portfolio/dist/index.html
