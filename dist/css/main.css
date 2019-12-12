@@ -359,6 +359,18 @@ h1, h2, h3 {
     .projects .preview:hover span {
       opacity: 1;
       transition: all 0.7s ease-out; }
+  .projects .btn, .projects .btn-view, .projects .btn-repo {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem; }
+    .projects .btn:hover, .projects .btn-view:hover, .projects .btn-repo:hover {
+      background-color: #F9F66F;
+      color: #992E44; }
+  .projects .btn-view {
+    background: #9c0724; }
+  .projects .btn-repo {
+    background-color: #f74568; }
 
 .contact-boxes {
   display: flex;

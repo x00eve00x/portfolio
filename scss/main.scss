@@ -266,8 +266,6 @@ h1, h2, h3 {
     }
 }
 
-
-
     // Bio image
 .bio-img {
     grid-area: bioimg;
@@ -335,6 +333,7 @@ h1, h2, h3 {
     .preview {
         text-align: center;
         position: relative;
+
         img {
             width: 100%;
             border: $secondary-color 4px solid;
@@ -367,6 +366,29 @@ h1, h2, h3 {
             }
         }
     }
+
+    .btn {
+        display: block;
+        padding: 0.5rem 1rem;
+        border: 0;
+        margin-bottom: 0.3rem;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: text-color-setting($secondary-color);
+        }
+    }
+
+    .btn-view {
+        @extend .btn;
+        background: darken($primary-color, 40%);
+
+    }
+
+    .btn-repo {
+        @extend .btn;
+        background-color: darken($primary-color, 10%);
+    }
 }
 
 // CONTACT PAGE
@@ -391,6 +413,7 @@ h1, h2, h3 {
     }
   }
 }
+
 // FOOTER
 #main-footer {
     text-align: center;
